@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>objects</title>
+</head>
+<body>
+    <script language="javscript" type="text/javascript">
+        var tutorial = {
+            "topic": "javascript",
+            "trainer": "mehmethan",
+            "mode": "online"
+        };
+
+        document.write("topic: "+tutorial.topic);
+        document.write("<br/> <br/>");
+        document.write("Trainer: "+ tutorial.trainer);
+        document.write("<br/> <br/>");
+        document.write("Mode: "+tutorial.mode);
+        document.write("<br/> <br/> ");
+
+        var txt="";
+        var x;
+        for (x in tutorial) {
+            txt += tutorial[x] + " , ";
+        }
+
+        document.write(txt);
+    </script>
+</body>
+</html>
